@@ -1462,3 +1462,5 @@ Using generated security password: e482bd6a-f8f3-4f2b-9b68-0bb0106f6844
 2018-04-25 13:40:25.603 DEBUG 3458 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Published WebApplicationContext of servlet 'dispatcherServlet' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcherServlet]
 2018-04-25 13:40:25.604  INFO 3458 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 95 ms
 2018-04-25 13:40:25.605 DEBUG 3458 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Servlet 'dispatcherServlet' configured successfully
+2018-04-25 21:40:18.581  INFO 3458 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14fc5f04: startup date [Wed Apr 25 13:40:00 CEST 2018]; root of context hierarchy
+2018-04-25 21:40:18.607  INFO 3458 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown

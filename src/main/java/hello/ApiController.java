@@ -1,35 +1,32 @@
 package hello;
 
-import org.springframework.web.bind.annotation.*;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.context.request.RequestContextHolder;
 
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
-
-
-@RestController
+@Controller
 public class ApiController {
-    private static Logger logger = Logger.getLogger(ApiController.class.toString());
 
-    @RequestMapping("/home")
-    public String root() {
-        logger.info("homeLogger");
-        return "redirect:/index";
+    @GetMapping("/home")
+    public String home() {
+        RequestContextHolder.currentRequestAttributes().getSessionId();
+        return "home";
     }
 
-    @RequestMapping("/index")
-    public String index() {
-        logger.info("indexLogger");
-        return "index";
+    @GetMapping("/")
+    public String welcome() {
+        System.out.println(RequestContextHolder.currentRequestAttributes().getSessionId());
+        return "home";
     }
 
-    @RequestMapping("/user/index")
-    public String userIndex() {
-        return "user/index";
-    }
-
-    @RequestMapping(path = "/login")
+    @GetMapping("/login")
     public String login() {
-        logger.info("DUPA");
         return "login";
+    }
+
+    @GetMapping("/hello")
+    public String hello() {
+        return "hello";
     }
 }
