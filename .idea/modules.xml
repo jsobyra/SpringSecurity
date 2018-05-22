@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringSecurity.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringSecurity.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringSecurity_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringSecurity_main.iml" group="SpringSecurity" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringSecurity_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringSecurity_test.iml" group="SpringSecurity" />
     </modules>
   </component>
 </project>
